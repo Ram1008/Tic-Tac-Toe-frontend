@@ -2,7 +2,7 @@ import { Session, Socket } from "@heroiclabs/nakama-js";
 import client from "./client";
 
 export async function connectSocket(session: Session): Promise<Socket> {
-  const socket = client.createSocket();
+  const socket = client.createSocket(true);
   await socket.connect(session, true);
 
   return socket;
