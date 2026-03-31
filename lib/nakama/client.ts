@@ -2,13 +2,15 @@ import { Client } from "@heroiclabs/nakama-js";
 
 const isBrowser = typeof window !== "undefined";
 
-const host = "34.100.165.40";
+const host = "ram-tic-tac-toe.duckdns.org";
+const port = "443";
+const useSSL = true;
 
 const client = new Client(
   "defaultkey",
   host,
-  "7350",
-  false
+  port,
+  useSSL
 );
 
 export default client;
