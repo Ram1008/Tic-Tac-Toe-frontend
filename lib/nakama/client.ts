@@ -3,7 +3,7 @@ import { Client } from "@heroiclabs/nakama-js";
 const isBrowser = typeof window !== "undefined";
 
 const host = "ram-tic-tac-toe.duckdns.org";
-const port = "443";
+const port = "";
 const useSSL = true;
 
 const client = new Client(
